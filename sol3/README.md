@@ -1,5 +1,5 @@
 ### sol3 : grafana
-*setting
+* settings
 ![grafana](sol3_grafana.png)
 
 * dashboard
