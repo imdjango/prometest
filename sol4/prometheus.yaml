@@ -1,5 +1,4 @@
 # rule files and alertmanagers:
-
 rule_files:
 - "/etc/prometheus/alert.rules"
 
