@@ -19,5 +19,17 @@ groups:
 ```
 * alertmanager.yml : s2/etc/alertmanager/
 ```
+global:
+templates:
+- '/etc/alertmanager/template/*.tmpl'
+route:
+  repeat_interval: 1m
+  receiver: operations-team
 
+receivers:
+- name: 'operations-team'
+  slack_configs:
+  - api_url: https://hooks.slack.com/services/xxxxxxxx
+    channel: '#xalert'
+    send_resolved: true
 ```
