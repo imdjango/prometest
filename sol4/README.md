@@ -1,6 +1,6 @@
 ### sol4
 
-* alert.rules : p1/etc/prometheus/
+* alert.rules; [p1] /etc/prometheus/
 ```
 groups:
 - name: example
@@ -13,7 +13,7 @@ groups:
     annotations:
       summary: Machine under healvy load
 ```
-* prometheus.yml : p1/etc/prometheus/
+* prometheus.yml; [p1] /etc/prometheus/
 ```
 # rule files and alertmanagers:
 rule_files:
@@ -46,7 +46,7 @@ scrape_configs:
     static_configs:
     - targets: ['s2:5000']
 ```
-* alertmanager.yml : s2/etc/alertmanager/
+* alertmanager.yml; [s2] /etc/alertmanager/
 ```
 global:
 templates:
